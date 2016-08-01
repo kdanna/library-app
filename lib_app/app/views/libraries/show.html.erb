@@ -2,4 +2,7 @@
   <h1>Name: <%= @library.name %></h1> 
   <h3>Floor count: <%= @library.floor_count %></h3>
   <h3>Floor area: <%= @library.floor_area %></h3>
-</div>
+  <div><%= button_to 'Edit', edit_library_path(@library), method: :get %></div>
+  <div><%= button_to "Delete", "/libraries/:id", method: :delete %></div>
+
+</div> 

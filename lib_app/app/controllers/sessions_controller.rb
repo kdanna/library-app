@@ -13,4 +13,5 @@ class SessionsController < ApplicationController
       	redirect_to "/sign_in"
     end
   end
+
 end
